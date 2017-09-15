@@ -1,0 +1,208 @@
+<!doctype HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="img/favicon.png" type="image/png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic-ext"
+          rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="build/css/style.min.css">
+</head>
+<body>
+<header class="page-header">
+    <h1 class="visually-hidden">Седона - круче чем Гранд Каньон</h1>
+
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        <div class="main-nav__wrapper">
+
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="form.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="photo-video.html">Фото и видео</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                    <a>Форма отзыва</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Контакты</a>
+                </li>
+
+
+                <li class="main-nav__item main-nav__item-logo">
+                    <a>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/icons/logotype-desktop.svg">
+                            <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" alt="Логотип-Седона">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="page-header__intro">
+</div>
+
+<section class="form">
+    <div class="form__wrapper">
+        <div class="form__info">
+            <h1 class="form__title">Оставьте свой отзыв</h1>
+            <p>Помогите нашим отелям стать лучше!
+                Оставьте отзыв о них, а также о
+                посещенных вами достопримечательностях</p>
+        </div>
+        <form class="form__main" method="post" action="#">
+
+            <div class="form__name">
+                <h2 class="form__block-title">Представьтесь,
+                    <span class="form__block-title--hide">пожалуйста</span>:</h2>
+                <div class="form__block-line form__block-name">
+                    <label class="form__label" for="name">Имя:</label>
+                    <input class="form__field form__field-name form__field-name--long" type="text" id="name" placeholder="Петр" required>
+                </div>
+                <div class="form__block-line form__block-name">
+                    <label class="form__label" for="surname">Фамилия:</label>
+                    <input class="form__field form__field-name" type="text" id="surname" placeholder="Иванов" required>
+                </div>
+                <div class="form__block-line form__block-name">
+                    <label class="form__label" for="fathername">Отчество:</label>
+                    <input class="form__field form__field-name" type="text" id="fathername" placeholder="Александрович">
+                </div>
+            </div>
+
+            <div class="form__contact">
+                <h2 class="form__block-title form__block-title--allwidth">Контактная информация:</h2>
+                <div class="form__block-contact">
+                    <div class="form__block-line form__block-line-contact form__block-line-contact--phone">
+                        <label class="form__label form__label-contact" for="telefon">Контактный телефон:</label>
+                        <input class="form__field form__field--long" type="tel" id="telefon" placeholder="Введите телефон" required>
+                    </div>
+                    <div class="form__block-line form__block-line-contact form__block-line-contact--mail">
+                        <label class="form__label form__label-contact" for="email">Электронная почта:</label>
+                        <input class="form__field form__field--long" type="email" id="email" placeholder="Введите e-mail" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__opinion">
+                <h2 class="form__block-title">Ваше общее впечатление:</h2>
+                <div class="form__opinion-list">
+                    <div class="form__opinion-item">
+                        <label>
+                            <input class="form__opinion-description" type="radio" name="opinion" value="+1" id="positive" checked>
+                            <span class="form__radio-custom"></span>
+                            <span class="form__opinion-place" for="positive">Скорее положительное</span>
+                        </label>
+                    </div>
+                    <div class="form__opinion-item">
+                        <label>
+                            <input class="form__opinion-description" type="radio" name="opinion" value="-1" id="negative" checked>
+                            <span class="form__radio-custom"></span>
+                            <span class="form__opinion-place" for="negative">Скорее отрицательное</span>
+                        </label>
+                    </div>
+                    <div class="form__opinion-item">
+                        <label>
+                            <input class="form__opinion-description" type="radio" name="opinion" value="0" id="neutral" checked>
+                            <span class="form__radio-custom"></span>
+                            <span class="form__opinion-place" for="neutral">Затрудняюсь ответить</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__place">
+                <h2 class="form__block-title form__block-title--allwidth">Посещенные достопримечательности:</h2>
+                <div class="form__place-list">
+                    <div class="form__place-item">
+                        <label>
+                            <input class="form__place-description" type="checkbox" name="place1" id="place1" checked>
+                            <span class="form__checkbox-custom"></span>
+                            <span class="form__opinion-place" for="place1">Мост Дьявола</span>
+                        </label>
+                    </div>
+                    <div class="form__place-item">
+                        <label>
+                            <input class="form__place-description" type="checkbox" name="place2" id="place2">
+                            <span class="form__checkbox-custom"></span>
+                            <span class="form__opinion-place" for="place2">Слайд-Парк</span>
+                        </label>
+                    </div>
+                    <div class="form__place-item">
+                        <label>
+                            <input class="form__place-description" type="checkbox" name="place3" id="place3" checked>
+                            <span class="form__checkbox-custom"></span>
+                            <span class="form__opinion-place" for="place3">Гора-Колокол</span>
+                        </label>
+                    </div>
+                    <div class="form__place-item">
+                        <label>
+                            <input class="form__place-description" type="checkbox" name="place4" id="place4">
+                            <span class="form__checkbox-custom"></span>
+                            <span class="form__opinion-place" for="place4">Красные скалы</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__textarea">
+                <h2 class="form__block-title form__block-title--allwidth">Опишите свои эмоции:</h2>
+                <div class="form__textarea-block">
+                    <textarea name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+                </div>
+            </div>
+
+            <div class="form__submit">
+                <input class="form__submit-button btn" type="submit" value="Отправить отзыв">
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <div class="page-footer__teg">
+            <p>#VISITSEDONA</p>
+        </div>
+        <div class="page-footer__socials">
+            <a class="social-link" href="#"><div class="social-link__twit"></div> Мы в Твиттере</a>
+            <a class="social-link" href="#"><div class="social-link__fb"></div>Мы в Фейсбуке</a>
+            <a class="social-link" href="#"><div class="social-link__tube"></div>Мы в Ютубе</a>
+        </div>
+        <div class="page-footer__copyright">
+            <span>
+                Разработано:
+            </span>
+            <a class="page-footer__copyright-link" href="#">EVGKTV<br> <b>Evgeny Kotlyarov</b></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--open');
+        }
+        else    {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--open');
+        }
+    });
+</script>
+</body>
+</html>

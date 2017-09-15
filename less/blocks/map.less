@@ -1,0 +1,23 @@
+.map {
+  .container-fluid();
+  position: relative;
+  width: 100%;
+  height: 350px;
+
+  background: url("../img/map-desktop.jpg") center no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 15px;
+    height: 15px;
+
+    top: 50%;
+    left: 50%;
+
+    background-color: @bg-blue;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+  }
+}

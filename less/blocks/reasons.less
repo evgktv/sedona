@@ -1,0 +1,305 @@
+.reasons__wrapper {
+    .container-fluid();
+}
+
+.reasons__title {
+    margin: 0;
+    padding: 40px;
+    padding-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #000000;
+
+    text-align: center;
+}
+
+.reasons__view {
+    margin: 0;
+    padding: 40px;
+    padding-top: 0;
+
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444444;
+
+    text-align: center;
+}
+
+.reasons__list,
+.reasons__list-advantages {
+    margin: 0;
+    padding: 0;
+
+    text-allign: center;
+
+    list-style: none;
+}
+
+.reasons__list {
+    margin-bottom: 28px;
+}
+
+.reasons__description {
+    padding: 30px 40px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    background-color: @bg-blue;
+
+}
+
+.reasons__description--square,
+.reasons__description--road,
+.reasons__description--turists {
+    position: relative;
+    padding-bottom: 30px;
+
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+.reasons__item-name {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.reasons__item-nummer {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.reasons__description p {
+    margin-bottom: 0;
+}
+
+.reasons__list-advantages {
+    padding: 10px 20px 40px 20px;
+}
+
+.reasons__item-advantage {
+    position: relative;
+    margin: 0;
+    padding-left: 60px;
+}
+
+.reasons__item-advantage::before {
+    position: absolute;
+    content: "";
+
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+}
+
+.reasons__item-advantage--house.reasons__item-advantage::before {
+    background: url("../img/icon-house.png") center no-repeat;
+}
+
+.reasons__item-advantage--gift.reasons__item-advantage::before {
+    background: url("../img/icon-gift.png") center no-repeat;
+}
+
+.reasons__item-advantage--food.reasons__item-advantage::before {
+    background: url("../img/icon-burger.png") center no-repeat;
+}
+
+.reasons__item-advantage-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.reasons__item-advantage p {
+    margin: 0;
+}
+
+.reasons__image {
+    margin-bottom: 30px;
+    text-align: center;
+    vertical-align: top;
+
+    overflow: hidden;
+}
+
+.reasons__image img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    vertical-align: top;
+}
+
+.reasons__item-card {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+
+        width: 80%;
+        height: 1px;
+        bottom: 0;
+        left: 10%;
+
+        background-color: #888888;
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+
+    & p {
+        color: #444444;
+    }
+}
+
+@media @tablet-widths {
+
+    .reasons__wrapper {
+        .container-fluid();
+    }
+
+    .reasons__title {
+        font-size: 24px;
+    }
+
+    .reasons__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-direction: row;
+        justidfy-content: space-around;
+    }
+
+    .reasons__item-name {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 24px;
+    }
+
+    .reasons__item--city {
+        width: 100%;
+    }
+
+    .reasons__city {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-direction: row;
+    }
+
+    .reasons__description {
+        width: 192px;
+        height: 196px;
+        flex-grow: 1;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    .reasons__image {
+        margin: 0;
+        width: 65%;
+        max-width: 800px;
+        overflow: hidden;
+    }
+
+    .reasons__item-advantage-title {
+        margin-bottom: 30px;
+        font-size: 24px;
+
+        text-align: center;
+    }
+
+    .reasons__list-advantages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .reasons__item-advantage {
+        padding: 0;
+        padding-top: 80px;
+        padding-bottom: 30px;
+        width: 33%;
+    }
+
+    .reasons__item-advantage p {
+        padding: 0 20px;
+        text-align: center;
+        color: #444444;
+    }
+
+    .reasons__item-advantage::before {
+        position: absolute;
+        content: "";
+
+        width: 77px;
+        height: 77px;
+        top: 0;
+        left: 50%;
+        margin-left: -39px;
+    }
+
+    .reasons__item-advantage--house.reasons__item-advantage::before {
+        background: url("../img/icon-house-desk.png") center no-repeat;
+    }
+
+    .reasons__item-advantage--gift.reasons__item-advantage::before {
+        background: url("../img/icon-gift-desk.png") center no-repeat;
+    }
+
+    .reasons__item-advantage--food.reasons__item-advantage::before {
+        background: url("../img/icon-burger-desk.png") center no-repeat;
+    }
+
+    .reasons__bridge {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+    }
+
+    .reasons__item--bridge {
+        width: 100%;
+    }
+
+    .reasons__item-card {
+        display: flex;
+        flex-grow: 1;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .reasons__description--card p {
+        color: #444444;
+    }
+}
+
+
+
+
+@media @desktop-widths {
+    .reasons__title {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+}
